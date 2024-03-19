@@ -5,8 +5,10 @@
 <br>
 <p align="center">
 🚀 저는 코딩을 이제 갓 입문한 개발자이며, 아직 우주의 먼지와 같은 존재라고 생각합니다. 👩‍🚀
-  👩‍🚀 언제나 최선을 다하여 고급인력으로 거듭날 수 있도록 노력하겠습니다. 지켜봐주세요!! 🚀
-</p>    
+</p> 
+<p align="center">
+ 👩‍🚀 언제나 최선을 다하여 고급인력으로 거듭날 수 있도록 노력하겠습니다. 지켜봐주세요!! 🚀
+</p> 
 <br>
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=kimjaehyun5116&show_icons=true&theme=radical)
