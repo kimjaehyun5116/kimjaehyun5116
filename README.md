@@ -1,4 +1,12 @@
-                                                [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)                    
+<p align="center">
+  Welcome to
+</p>
+<p aling="center">
+  KIM's Github
+  
+<p align="center">
+🚀 저는 코딩을 이제 갓 입문한 개발자이며, 아직 우주의 먼지와 같은 존재라고 생각합니다. 👩‍🚀
+</p>        
                                                 
 <!--내용 부분-->
 <h3 align="center">✨ Tech Stack ✨</h3>
