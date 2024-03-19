@@ -69,13 +69,13 @@
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
    <a href="https://blog.naver.com/oasisefit">
-     <img src="http://img.shields.io/badge/Blog-007396?style=social&logo=Naver&Logocolor=03C75A&link=https://blog.naver.com/oasisefit"/>
+     <img src="http://img.shields.io/badge/Blog-007396?style=flat&logo=Naver&Logocolor=03C75A&link=https://blog.naver.com/oasisefit"/>
 </a>
   <a href="ibns789@gmail.com">
-    <img src="https://img.shields.io/badge/ibns789@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
+    <img src="https://img.shields.io/badge/mail-EA4335?style=flat&logo=gmail&logoColor=white"/>
 </a>
   <a href="https://instagram.com/ibns789">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&link=https://instagram.com/ibns789"/>
+  <img src="https://img.shields.io/badge/Instagram-F9AB00?style=flat&logo=Instagram&logocolor=E4405F&link=https://instagram.com/ibns789"/>
   </a>
     
 </div>
