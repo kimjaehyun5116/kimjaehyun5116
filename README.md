@@ -72,7 +72,7 @@
      <img src="http://img.shields.io/badge/Blog-007396?style=flat&logo=Naver&Logocolor=03C75A&link=https://blog.naver.com/oasisefit"/>
 </a>
   <a href="ibns789@gmail.com">
-    <img src="https://img.shields.io/badge/mail-EA4335?style=flat&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/MAIL-EA4335?style=flat&logo=gmail&logoColor=white"/>
 </a>
   <a href="https://instagram.com/ibns789">
   <img src="https://img.shields.io/badge/SNS-F9AB00?style=flat&logo=Instagram&logocolor=E4405F&link=https://instagram.com/ibns789"/>
