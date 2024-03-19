@@ -80,7 +80,5 @@
  <br>
 
  <div align="center">
-  <a href="https://instagram.com/ibns789/"><img src="https://img.shields.io/badge/velog-11B48A?style=flat-square&logo=Vimeo&logoColor=white&link=https://velog.io/@soyeon207"/>
+  <a href="https://instagram.com/ibns789/"><img src="http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/oasisefit"/>
 </div>
-
-http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/chajuhui123)
