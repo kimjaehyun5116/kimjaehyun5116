@@ -7,7 +7,7 @@
 <p align="center">
 🚀 저는 코딩을 이제 갓 입문한 개발자이며, 아직 우주의 먼지와 같은 존재라고 생각합니다. 👩‍🚀
 </p>        
-
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={kimjaehyun51116})](https://solved.ac/{kimjaehyun5116})
 <br>
                                           
 <!--내용 부분-->
