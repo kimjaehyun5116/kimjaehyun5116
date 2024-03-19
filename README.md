@@ -1,5 +1,5 @@
 <h1 align="center">
-  WELCOME TO KIM'S GITHUB
+  Welcome to KIM'S Github
 </h1>
 <p align="center">
 🚀 저는 코딩을 이제 갓 입문한 개발자이며, 아직 우주의 먼지와 같은 존재라고 생각합니다. 👩‍🚀
