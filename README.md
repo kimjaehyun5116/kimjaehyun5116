@@ -68,16 +68,13 @@
 
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
-   <a href="https://blog.naver.com/oasisefit"><img src="http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/oasisefit"/>
+   <a href="https://blog.naver.com/oasisefit">
+     <img src="http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/oasisefit"/>
 </a>
   <a href="ibns789@gmail.com">
     <img src="https://img.shields.io/badge/ibns789@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
-  </a>
-</div>
-
- <br>
-
- <div align="center">
-  <a href="https://blog.naver.com/oasisefit"><img src="http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/oasisefit"/>
-  <a href="https://instagram.com/ibns789"><img src="http://img.shields.io/badge/-Instagram-black?style=flat&logo=Instagram&link=https://instagram.com/alpox.dev/"style="height : auto; margin-left : 10px; margin-right : 10px;"/>
+</a>
+  <a href="https://instagram.com/ibns789">
+  <img src="http://img.shields.io/badge/-Instagram-black?style=flat&logo=Instagram&link=https://instagram.com/alpox.dev/"style="height : auto; margin-left : 10px; margin-right : 10px;"/>
+    
 </div>
