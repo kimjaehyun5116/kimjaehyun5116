@@ -69,7 +69,7 @@
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
    <a href="https://blog.naver.com/oasisefit">
-     <img src="http://img.shields.io/badge/Blog-#03C75A?style=flat-square&logo=Naver&link=https://blog.naver.com/oasisefit"/>
+     <img src="http://img.shields.io/badge/Naver Blog-#03C75A?style=flat-square&logo=Naver&link=https://blog.naver.com/oasisefit"/>
 </a>
   <a href="ibns789@gmail.com">
     <img src="https://img.shields.io/badge/ibns789@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
