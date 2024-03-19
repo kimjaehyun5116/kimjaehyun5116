@@ -76,5 +76,6 @@
 </a>
   <a href="https://instagram.com/ibns789">
   https://img.shields.io/badge/-Instagram-brightgreen?style=flat&logo=E4405F&link=https://instagram.com/ibns789"/>
+  </a>
     
 </div>
