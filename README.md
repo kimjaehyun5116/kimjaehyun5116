@@ -71,3 +71,9 @@
       src="https://img.shields.io/badge/oka1313@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
   </a>
 </div>
+
+ <br>
+
+ <div align="center">
+  <a href="https://velog.io/@soyeon207"><img src="https://img.shields.io/badge/velog-11B48A?style=flat-square&logo=Vimeo&logoColor=white&link=https://velog.io/@soyeon207"/>
+</div>
