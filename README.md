@@ -75,6 +75,6 @@
     <img src="https://img.shields.io/badge/ibns789@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
 </a>
   <a href="https://instagram.com/ibns789">
-  <img src="http://img.shields.io/badge/-Instagram-black?style=flat&logo=Instagram&link=https://instagram.com/>
+  https://img.shields.io/badge/-Instagram-brightgreen?style=flat&logo=E4405F&link=https://instagram.com/ibns789"/>
     
 </div>
