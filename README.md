@@ -1,13 +1,17 @@
 <h1 align="center">
  🚀Welcome to KIM'S Github🚀
 </h1>
-[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={kimjaehyun51116})](https://solved.ac/{kimjaehyun5116})
-<br>
-<br>
 
+<br>
 <p align="center">
 🚀 저는 코딩을 이제 갓 입문한 개발자이며, 아직 우주의 먼지와 같은 존재라고 생각합니다. 👩‍🚀
-</p>        
+</p>    
+<br>
+
+![Github Stats](https://github-readme-stats.vercel.app/api?username=kimjaehyun5116&show_icons=true)
+[![Top Langs](https://github-redme-stats.vercel.app/api/top-langs/?username=HEEXIONG&layout=compact)](https://github.com/HEEXIONG/github-redme-stats)
+
+<br> 
 
                                           
 <!--내용 부분-->
@@ -77,5 +81,5 @@
   <a href="https://instagram.com/ibns789">
   <img src="https://img.shields.io/badge/SNS-F9AB00?style=flat&logo=Instagram&logocolor=E4405F&link=https://instagram.com/ibns789"/>
   </a>
-    
+
 </div>
