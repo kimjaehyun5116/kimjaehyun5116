@@ -68,6 +68,7 @@ public class Application2 {
 
         /* 2-4 논리를 취급하는 자료형에 값 대입 */
         isTrue = true;
+
         isTrue = false;
 
         /* 2-5 문자열을 취급하는 자료형에 값 대입 */
@@ -85,6 +86,15 @@ public class Application2 {
         System.out.println("inum의 값 출력 : " + inum);
         System.out.println("lnum의 값 출력 : " + lnum);
 
+        System.out.println("fnum의 값 출력 : " + fnum);
+        System.out.println("dnum의 값 출력 : " + dnum);
+
+        System.out.println("ch의 값 출력 : " + ch);
+        System.out.println("ch2의 값 출력 : " + ch2);
+
+        System.out.println("isTrue의 값 출력 : " + isTrue);
+
+        System.out.println("str 값 출력 : " +str);
 
 
 
