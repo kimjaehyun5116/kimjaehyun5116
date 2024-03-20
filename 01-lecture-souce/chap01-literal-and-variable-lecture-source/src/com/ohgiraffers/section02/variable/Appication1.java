@@ -1,5 +1,6 @@
 package com.ohgiraffers.section02.variable;
 
+
 public class Appication1 {
 
     public static void main(String[] args){
@@ -46,8 +47,6 @@ public class Appication1 {
         System.out.println("8번 고객에게 포인트를 "+ point +"포인트 지급하였습니다");
         System.out.println("9번 고객에게 포인트를 "+ point +"포인트 지급하였습니다");
         System.out.println("10번 고객에게 포인트를 "+ point +"포인트 지급하였습니다");
-
-
 
 
 
