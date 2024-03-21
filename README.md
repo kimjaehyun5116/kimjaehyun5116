@@ -11,7 +11,9 @@
 </p> 
 <br>
 
+<div align="center">
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=kimjaehyun5116&show_icons=true&theme=radical)
+</div>
 
 <br> 
 
