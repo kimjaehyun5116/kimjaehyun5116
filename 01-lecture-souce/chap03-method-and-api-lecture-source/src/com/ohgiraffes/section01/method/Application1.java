@@ -3,7 +3,6 @@ package com.ohgiraffes.section01.method;
 public class Application1 {
 
     public static void main(String[] args) {
-        Application1 app = new Application1();
 
         /* 수업목표. 메소드의 호출 흐름을 이해할 수 있다. */
         /*
@@ -25,7 +24,7 @@ public class Application1 {
          * */
 
         System.out.println("main() 시작됨...");
-
+        Application1 app = new Application1();
         app.methodA();
 
         System.out.println("main() 끝...");
