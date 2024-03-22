@@ -28,6 +28,8 @@ public class Application2 {
 
         System.out.println("50과 60중 더 큰 값은? " + max);
 
+        /* 3. static 메소드를 호출할 때 클래스명을 생략하고 사용할 수 있다. */
+
         int max2 = maxNumberOf(100,200); // static 메소드 수동추가
         System.out.println("100과 200중에 더 큰 값은? " + max2);
 
