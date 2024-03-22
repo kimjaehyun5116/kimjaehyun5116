@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="923b7a5a-0190-40fd-8402-18f15ebe4943" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/section03/math/Application1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/section03/math/Application2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/section03/math/Application3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chap02-operater-lecture-source/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap02-operater-lecture-source/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/Question/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/Question/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ohgiraffers/Question/CalculatorApplication1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Application9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section01/method/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section02/packge_and_import/Application1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section02/packge_and_import/Application2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chap03-method-and-api-lecture-source/com/ohgiraffes/section02/packge_and_import/fdasf.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +97,7 @@
       <workItem from="1711093003003" duration="29000" />
       <workItem from="1711093039922" duration="16000" />
       <workItem from="1711093073698" duration="132000" />
-      <workItem from="1711093270676" duration="2607000" />
+      <workItem from="1711093270676" duration="5655000" />
     </task>
     <servers />
   </component>
