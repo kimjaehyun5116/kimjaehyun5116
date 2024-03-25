@@ -1,0 +1,8 @@
+diff a/01-lecture-souce/chap01-literal-and-variable-lecture-source/src/com/ohgiraffers/section02/variable/Appication1.java b/01-lecture-souce/chap01-literal-and-variable-lecture-source/src/com/ohgiraffers/section02/variable/Appication1.java	(rejected hunks)
+@@ -1,5 +1,6 @@
+ package com.ohgiraffers.section02.variable;
+ 
++
+ public class Appication1 {
+ 
+     public static void main(String[] args){
