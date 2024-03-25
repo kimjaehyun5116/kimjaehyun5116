@@ -33,5 +33,6 @@ public class Application2 {
         int max2 = maxNumberOf(100,200); // static 메소드 수동추가
         System.out.println("100과 200중에 더 큰 값은? " + max2);
 
+
     }
 }
