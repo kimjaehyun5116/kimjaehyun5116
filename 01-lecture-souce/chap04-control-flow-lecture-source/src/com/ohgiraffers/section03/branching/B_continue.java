@@ -27,7 +27,7 @@ public class B_continue {
             }
             System.out.println();
         }
-        
+
     }
 
 }
