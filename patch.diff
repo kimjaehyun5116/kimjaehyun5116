@@ -1,0 +1,552 @@
+From f1a4c007ca725350239a7effc69719f43d0f0ac0 Mon Sep 17 00:00:00 2001
+From: "DESKTOP-JGD235K\\home" <ibns789@gmail.com>
+Date: Fri, 22 Mar 2024 21:30:50 +0900
+Subject: [PATCH] =?UTF-8?q?=EC=88=99=EC=A0=9C=EC=BB=A4=EB=B0=8B?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ JAVA/.gitignore             | 29 +++++++++++++++++++++
+ JAVA/.idea/.gitignore       |  8 ++++++
+ JAVA/.idea/misc.xml         |  6 +++++
+ JAVA/.idea/modules.xml      |  8 ++++++
+ JAVA/.idea/vcs.xml          |  6 +++++
+ JAVA/Question.java          | 38 +++++++++++++++++++++++++++
+ JAVA/src/Main.java          | 15 +++++++++++
+ adad/.gitignore             | 29 +++++++++++++++++++++
+ adad/.idea/.gitignore       |  8 ++++++
+ adad/.idea/misc.xml         |  6 +++++
+ adad/.idea/modules.xml      |  8 ++++++
+ adad/.idea/vcs.xml          |  6 +++++
+ adad/adad.iml               | 11 ++++++++
+ adad/src/Application01.java | 12 +++++++++
+ adad/src/Calculator.java    | 39 ++++++++++++++++++++++++++++
+ adad/src/Main.java          | 15 +++++++++++
+ adad/src/Question.java      | 24 +++++++++++++++++
+ adad/src/Question2.java     | 24 +++++++++++++++++
+ adad/src/Question3.java     | 51 +++++++++++++++++++++++++++++++++++++
+ adad/src/Question4.java     | 23 +++++++++++++++++
+ 20 files changed, 366 insertions(+)
+ create mode 100644 JAVA/.gitignore
+ create mode 100644 JAVA/.idea/.gitignore
+ create mode 100644 JAVA/.idea/misc.xml
+ create mode 100644 JAVA/.idea/modules.xml
+ create mode 100644 JAVA/.idea/vcs.xml
+ create mode 100644 JAVA/Question.java
+ create mode 100644 JAVA/src/Main.java
+ create mode 100644 adad/.gitignore
+ create mode 100644 adad/.idea/.gitignore
+ create mode 100644 adad/.idea/misc.xml
+ create mode 100644 adad/.idea/modules.xml
+ create mode 100644 adad/.idea/vcs.xml
+ create mode 100644 adad/adad.iml
+ create mode 100644 adad/src/Application01.java
+ create mode 100644 adad/src/Calculator.java
+ create mode 100644 adad/src/Main.java
+ create mode 100644 adad/src/Question.java
+ create mode 100644 adad/src/Question2.java
+ create mode 100644 adad/src/Question3.java
+ create mode 100644 adad/src/Question4.java
+
+diff --git a/JAVA/.gitignore b/JAVA/.gitignore
+new file mode 100644
+index 0000000..f68d109
+--- /dev/null
++++ b/JAVA/.gitignore
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+diff --git a/JAVA/.idea/.gitignore b/JAVA/.idea/.gitignore
+new file mode 100644
+index 0000000..13566b8
+--- /dev/null
++++ b/JAVA/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/JAVA/.idea/misc.xml b/JAVA/.idea/misc.xml
+new file mode 100644
+index 0000000..07115cd
+--- /dev/null
++++ b/JAVA/.idea/misc.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/JAVA/.idea/modules.xml b/JAVA/.idea/modules.xml
+new file mode 100644
+index 0000000..6eea53d
+--- /dev/null
++++ b/JAVA/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/C:\Users\ibns7\OneDrive\문서\kimjaehyun5116\01-lecture-souce\chap03-method-and-api-lecture-source\src\com\ohgiraffers\Question\.iml" filepath="$PROJECT_DIR$/C:\Users\ibns7\OneDrive\문서\kimjaehyun5116\01-lecture-souce\chap03-method-and-api-lecture-source\src\com\ohgiraffers\Question\.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/JAVA/.idea/vcs.xml b/JAVA/.idea/vcs.xml
+new file mode 100644
+index 0000000..6c0b863
+--- /dev/null
++++ b/JAVA/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/JAVA/Question.java b/JAVA/Question.java
+new file mode 100644
+index 0000000..4fa4b24
+--- /dev/null
++++ b/JAVA/Question.java
+@@ -0,0 +1,38 @@
++package com.ohgiraffers.Question;
++
++public class Qustion {
++
++    public static void main(String[] args) {
++
++        /*정수형 변수 2개를 선언하여 각 20과 30으로 초기화 한 후
++         * 두 수의 더하기, 빼기, 곱하기, 나누기, 나머지를 다음과 같이 출력하세요
++         *
++         * -- 출력 예시--
++         * 더하기 결과 : 50
++         * 빼기 결과 : -10
++         * 곱하기 결과 : 600
++         * 나누기한 몫 : 0
++         * 나누기한 나머지 : 20
++         * */
++
++
++        int num1 = 20;
++        int num2 = 30;
++
++        int sum = num1 + num2;
++        System.out.println("더하기 결과? " + sum);
++
++        int sum2 = num1 - num2;
++        System.out.println("빼기 결과? " + sum2);
++
++        int sum3 = num1 * num2;
++        System.out.println("곱하기 결과? " + sum3);
++
++        int sum4 = num1 / num2;
++        System.out.println("나누기한 몫? " + sum4);
++
++        int sum5 = num1 % num2;
++        System.out.println("나누기한 나머지? " + sum5);
++
++    }
++}
+diff --git a/JAVA/src/Main.java b/JAVA/src/Main.java
+new file mode 100644
+index 0000000..930198c
+--- /dev/null
++++ b/JAVA/src/Main.java
+@@ -0,0 +1,15 @@
++//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
++// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
++public class Main {
++    public static void main(String[] args) {
++        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
++        // to see how IntelliJ IDEA suggests fixing it.
++        System.out.printf("Hello and welcome!");
++
++        for (int i = 1; i <= 5; i++) {
++            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
++            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
++            System.out.println("i = " + i);
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/adad/.gitignore b/adad/.gitignore
+new file mode 100644
+index 0000000..f68d109
+--- /dev/null
++++ b/adad/.gitignore
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+diff --git a/adad/.idea/.gitignore b/adad/.idea/.gitignore
+new file mode 100644
+index 0000000..13566b8
+--- /dev/null
++++ b/adad/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/adad/.idea/misc.xml b/adad/.idea/misc.xml
+new file mode 100644
+index 0000000..07115cd
+--- /dev/null
++++ b/adad/.idea/misc.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/adad/.idea/modules.xml b/adad/.idea/modules.xml
+new file mode 100644
+index 0000000..cff62d2
+--- /dev/null
++++ b/adad/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/adad.iml" filepath="$PROJECT_DIR$/adad.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/adad/.idea/vcs.xml b/adad/.idea/vcs.xml
+new file mode 100644
+index 0000000..6c0b863
+--- /dev/null
++++ b/adad/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/adad/adad.iml b/adad/adad.iml
+new file mode 100644
+index 0000000..c90834f
+--- /dev/null
++++ b/adad/adad.iml
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/adad/src/Application01.java b/adad/src/Application01.java
+new file mode 100644
+index 0000000..3bf04e0
+--- /dev/null
++++ b/adad/src/Application01.java
+@@ -0,0 +1,12 @@
++public class Application01 {
++    public static void main(String[] args) {
++
++        Calculator calc = new Calculator();
++
++        calc.checkMethod();
++        System.out.println("10과 20의 합 : " + calc.sumTwoNumber(10, 20));
++        System.out.println("10과 5의 차 : " + calc.minusTwoNumber(10, 5));
++        System.out.println("10과 5의 곱 : " + calc.multiTwoNumber(10, 5));
++        System.out.println("10과 5의 나눈 후 몫 : " + calc.divideTwoNumber(10, 5));
++    }
++}
+diff --git a/adad/src/Calculator.java b/adad/src/Calculator.java
+new file mode 100644
+index 0000000..1e76c90
+--- /dev/null
++++ b/adad/src/Calculator.java
+@@ -0,0 +1,39 @@
++public class Calculator {
++    public static void main(String[] args) {
++        Calculator calculator = new Calculator();
++        calculator.checkMethod(); // 메소드 호출 확인 출력
++
++        // 각 메소드 호출 후 결과 출력
++        int sum = calculator.sumTwoNumber(10, 20);
++        System.out.println("두 수의 합: " + sum);
++
++        int difference = calculator.minusTwoNumber(30, 15);
++        System.out.println("두 수의 차: " + difference);
++
++        int product = calculator.multiTwoNumber(5, 8);
++        System.out.println("두 수의 곱: " + product);
++
++        int quotient = calculator.divideTwoNumber(100, 10);
++        System.out.println("두 수의 나눈 값: " + quotient);
++    }
++
++    public void checkMethod() {
++        System.out.println("- 메소드 호출 확인");
++    }
++
++    public int sumTwoNumber(int a, int b) {
++        return a + b;
++    }
++
++    public int minusTwoNumber(int a, int b) {
++        return a - b;
++    }
++
++    public int multiTwoNumber(int a, int b) {
++        return a * b;
++    }
++
++    public int divideTwoNumber(int a, int b) {
++        return a / b;
++    }
++}
+\ No newline at end of file
+diff --git a/adad/src/Main.java b/adad/src/Main.java
+new file mode 100644
+index 0000000..930198c
+--- /dev/null
++++ b/adad/src/Main.java
+@@ -0,0 +1,15 @@
++//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
++// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
++public class Main {
++    public static void main(String[] args) {
++        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
++        // to see how IntelliJ IDEA suggests fixing it.
++        System.out.printf("Hello and welcome!");
++
++        for (int i = 1; i <= 5; i++) {
++            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
++            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
++            System.out.println("i = " + i);
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/adad/src/Question.java b/adad/src/Question.java
+new file mode 100644
+index 0000000..2ef2083
+--- /dev/null
++++ b/adad/src/Question.java
+@@ -0,0 +1,24 @@
++public class Question {
++
++    public static void main(String[] args) {
++        
++    int num1 = 20;
++    int num2 = 30;
++    
++        int sum = num1 + num2;
++        System.out.println("더하기 결과? : " + sum);
++
++        int sum1 = num1 - num2;
++        System.out.println("빼기 결과 : " + sum1);
++
++        int sum2 = num1 * num2;
++        System.out.println("곱하기 결과 : " + sum2);
++
++        int sum3 = num1 / num2;
++        System.out.println("나누기 결과 : " + sum3);
++
++        int sum4 = num1 % num2;
++        System.out.println("나눈 나머지 결과 : " + sum4);
++
++    }
++}
+diff --git a/adad/src/Question2.java b/adad/src/Question2.java
+new file mode 100644
+index 0000000..b08029c
+--- /dev/null
++++ b/adad/src/Question2.java
+@@ -0,0 +1,24 @@
++public class Question2 {
++    public static void main(String[] args) {
++
++        /* 사각형의 넓이와 둘레를 구하는 문제이다.
++         * 너비 12.5 높이 36.4를 변수에 저장하고
++         * 각 넓이와 둘레를 계산해 변수에 담고 아래와 같이 출력되도록 하시오
++         *
++         * --출력 예시--
++         * 면적 : 455.0
++         * 둘레 : 97.9
++         * */
++
++        double width = 12.5;
++        double height = 36.4;
++
++        double area = width * height;
++
++        double perimeter = 2 * (width + height);
++
++        System.out.println("면적 : " + area);
++        System.out.println("둘레 : " + perimeter);
++
++    }
++}
+diff --git a/adad/src/Question3.java b/adad/src/Question3.java
+new file mode 100644
+index 0000000..b8f6166
+--- /dev/null
++++ b/adad/src/Question3.java
+@@ -0,0 +1,51 @@
++public class Question3 {
++    public static void main(String[] args) {
++
++          /* Application01
++        int x = 2;
++		int y = 5;
++		char c = 'A'; // 'A'의 문자코드는 65
++		System.out.println(y >= 5 || x < 0 && x > 2);
++		 // y >=5 는 true 이므로 이후의 것은 평가되지 않는다. 따라서 true
++		System.out.println(y += 10 - x++);
++		// y = y + (10 - x++) 을 의미한다 x++은 후위 증가 연산자 이므로 y = 5+ (10-2)
++		   따라서 13이 된다
++		System.out.println(x+=2);
++		// 전 식에서 x가 후위 증가되어서 3이 되었으니 3+2=5가 된다 따라서 5가 출력된다
++		System.out.println( !('A' <= c && c <='Z') );
++		// !true 를 의미한다. 'A'는 'Z' 사이에 있으므로 (true && true)가 되어 true가 됩니다 . 따라서 false가 출력됩니다.
++		System.out.println('C'-c);
++		// 'C'-c'는 'c'와 'A'사이의 차이를 나타냅니다. 'C'는 ASCII에서 67이고 'A'는 65 이므로 결과는 2가 됩니다.
++		System.out.println('5'-'0');
++		// '5'-'0'은 문자열 '5'와 '0' 사이의 차이를 나타냅니다. 따라서 결과는 5가 됩니다.
++            따라서 5가 출력됩니다.
++		System.out.println(c+1);
++		// c+1은 'A' + 1을 의미하며, ASCII에서 'A'는 65이므로 결과는 66이 됩니다.
++          따라서 66이 출력됩니다.
++		System.out.println(++c);
++		// ++c는 c를 증가시킨 후의 값을 사용합니다. 따라서 'B'로 변경됩니다.
++            따라서 'B'가 출력됩니다.
++		System.out.println(c++);
++        // c++는 현재의 c 값을 사용한 후에 c를 증가시킵니다. 따라서 이전에 'B'였던 값이 출력되고, 그 후에 c는 'C'로 증가합니다.
++           따라서 'B'가 출력됩니다.
++		System.out.println(c);
++        // 이전에 c가 'C'로 증가되었으므로, 'C'가 출력됩니다
++        */
++
++        int x = 2;
++        int y = 5;
++        char c = 'A';
++        System.out.println(y >= 5 || x < 0 && x > 2);
++        System.out.println(y += 10 - x++);
++        System.out.println(x += 2);
++        System.out.println(!('A' <= c && c <= 'Z'));
++        System.out.println('C' - c);
++        System.out.println('5' - '0');
++        System.out.println(c + 1);
++        System.out.println(++c);
++        System.out.println(c++);
++        System.out.println(c);
++    }
++}
++
++
+diff --git a/adad/src/Question4.java b/adad/src/Question4.java
+new file mode 100644
+index 0000000..90ee036
+--- /dev/null
++++ b/adad/src/Question4.java
+@@ -0,0 +1,23 @@
++public class Question4 {
++
++    public static void main(String[] args) {
++
++        /* Application02
++         *
++         * 내가 가지고 있는 사과의 갯수는 92개이다.
++         * 이를 담을 수 있는 바구니에는 10개의 사과를 담을 수 있다면 총 10개의 바구니가 필요할 것이다.
++         * 아래에 알맞은 코드를 넣으시오.
++         *
++         * int numOfApples = 92;
++         * int sizeOfBucket = 10;
++         * int numOfBucket = ?
++         *
++         * System.out.println("필요한 바구니의 수 : " + numOfBucket); -> 10
++         */
++        int numOfApples = 92;
++        int sizeOfBucket = 10;
++        int numOfBucket = (numOfApples + sizeOfBucket - 1) / sizeOfBucket;
++
++        System.out.println("필요한 바구니의 수 : " + numOfBucket); // 10
++        }
++}
+-- 
+2.43.0.windows.1
+
