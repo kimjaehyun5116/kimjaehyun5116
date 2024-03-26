@@ -17,9 +17,10 @@ public class Application {
         B_while anr = new B_while();
         //anr.testSimpleWhileStatement();
         //anr.testWhileExample1();
+        anr.testWhileExample1();
         C_doWhile c = new C_doWhile();
         //c.testSimpleDoWhileStatment();
-        c.testDoWhileExample();
+        //c.testDoWhileExample();
     }
 
 }
