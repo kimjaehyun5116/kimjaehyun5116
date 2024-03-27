@@ -17,6 +17,7 @@ public class Application {
         int intNum = 10;
         long longNum = 100L;
         long sum = intNum + longNum;
+
         System.out.println("int와 long의 합계: " + sum);
 
 

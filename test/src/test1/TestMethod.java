@@ -39,7 +39,7 @@ public class TestMethod {
         Scanner scanner = new Scanner(System.in);
         System.out.print("반지름을 입력하세요: ");
         double radius = scanner.nextDouble();
-        System.out.println("원의 넓이는 " + circleArea(radius) + "입니다.");
+        System.out.println("원의 넓이는 " + radius + "입니다.");
 
 
         System.out.println(testRandom());
