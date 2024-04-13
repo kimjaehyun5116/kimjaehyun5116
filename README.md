@@ -21,8 +21,9 @@
                                           
 <!--내용 부분-->
 <h2>✨ My Skills ✨</h2>
-## Platforms & Languages
+<h4>Platforms & Languages</h4>
 <br>
+
 <div>
     <img src="https://img.shields.io/badge/-JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
     <img src="https://img.shields.io/badge/-HTML5-F05032?style=for-the-badge&logo=html5&logoColor=white">
@@ -30,6 +31,7 @@
     <img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=for-the-badge&logo=javascript&logoColor=white">
     <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
 <br>
+ 
 </div>
 <div>
     <img src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white">
