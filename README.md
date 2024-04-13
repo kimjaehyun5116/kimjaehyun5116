@@ -20,8 +20,8 @@
 
                                           
 <!--내용 부분-->
-<h2>✨ My Skills ✨</h2>
-<h4>Platforms & Languages</h4>
+<h1>✨ My Skills ✨</h1>
+<h3>Platforms & Languages</h3>
 
 <div>
     <img src="https://img.shields.io/badge/-JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
@@ -44,7 +44,7 @@
 <img src="https://img.shields.io/badge/-intellijidea-black?style=for-the-badge&logo=intellijidea&Color=white"> <img src="https://img.shields.io/badge/-visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/-eclipseide-2C2255?style=for-the-badge&logo=eclipseide&Color=white"> <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 
 <br>
-<h2 align="left">📫 Contact 📫</h2>
+<h1 align="left">📫 Contact 📫</h1>
 
 <div align="left">
    <a href="mailto:ibns789@gmail.com"> <img src="https://img.shields.io/badge/MAIL-EA4335?style=flat&logo=gmail&logoColor=white"/></a>
