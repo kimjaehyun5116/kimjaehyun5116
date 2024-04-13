@@ -21,7 +21,7 @@
                                           
 <!--내용 부분-->
 <h2>✨ My Skills ✨</h2>
-<h4>Platforms & Languages</h4>
+<h3>Platforms & Languages</h3>
 
 <style>
     .image-column {
