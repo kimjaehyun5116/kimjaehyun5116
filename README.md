@@ -22,6 +22,7 @@
 <!--내용 부분-->
 <h2>✨ My Skills ✨</h2>
 <h4>Platforms & Languages</h4>
+
 <style>
     .image-column {
         display: inline-block;
