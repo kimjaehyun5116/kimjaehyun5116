@@ -29,7 +29,7 @@
     <img src="https://img.shields.io/badge/-CSS3-007ACC?style=for-the-badge&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=for-the-badge&logo=javascript&logoColor=white">
     <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
-</div><br>
+</div>
 <div>
     <img src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white">
     <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
