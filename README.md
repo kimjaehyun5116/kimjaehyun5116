@@ -21,14 +21,15 @@
                                           
 <!--내용 부분-->
 <h2>✨ My Skills ✨</h2>
-<h3>Platforms & Languages</h3>
+<h4>Platforms & Languages</h4>
 
 <style>
     .image-column {
         display: inline-block;
-        margin-right: 20px; /* 열과 열 사이의 간격 조절 */
+        margin-right: 20px;
     }
 </style>
+
 
 <div class="image-column">
     <img src="https://img.shields.io/badge/-JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
