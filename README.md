@@ -10,8 +10,9 @@
  👩‍🚀 언제나 최선을 다하여 고급인력으로 거듭날 수 있도록 노력하겠습니다. 지켜봐주세요!! 🚀
 </p> 
 <br>
-
+<div>
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=kimjaehyun5116&show_icons=true&theme=radical)
+</dib>
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=백준아이디)](https://solved.ac/백준아이디/)
 
 <br> 
