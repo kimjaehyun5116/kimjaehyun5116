@@ -20,9 +20,7 @@
 
                                           
 <!--내용 부분-->
-<h2>✨ My Skills ✨</h2>
-<h4>Platforms & Languages</h4>
-
+<h2>✨ My Stack ✨</h2>
 <div>
  <h5>
     <img src="https://img.shields.io/badge/-JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
@@ -32,18 +30,18 @@
     <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=white"></h5>
 </div>
 <div>
-    <img src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white">
     <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
     <img src="https://img.shields.io/badge/-Oracle-F80000?style=for-the-badge&logo=Oracle&Color=white">
     <img src="https://img.shields.io/badge/-springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
     <img src="https://img.shields.io/badge/-node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
 </div>
-</h4>
+<h2>✨ My Skill ✨</h2>
+<img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 
 <br>
 <h2>✨ My Tools ✨</h2>
 
-<img src="https://img.shields.io/badge/-intellijidea-black?style=for-the-badge&logo=intellijidea&Color=white"> <img src="https://img.shields.io/badge/-visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/-eclipseide-2C2255?style=for-the-badge&logo=eclipseide&Color=white"> <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=github&logoColor=white"> 
+<img src="https://img.shields.io/badge/-intellijidea-black?style=for-the-badge&logo=intellijidea&Color=white"> <img src="https://img.shields.io/badge/-visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/-eclipseide-2C2255?style=for-the-badge&logo=eclipseide&Color=white"> <img src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&logo=docker&logoColor=white">
 
 <br>
 <h2 align="left">📫 Contact 📫</h2>
