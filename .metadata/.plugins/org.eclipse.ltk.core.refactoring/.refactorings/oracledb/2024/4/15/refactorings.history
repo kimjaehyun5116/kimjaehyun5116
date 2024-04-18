@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;oracledb/src/06_dml.sql&apos; to &apos;06_DML_Insert.sql&apos;" description="Rename resource &apos;06_dml.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/06_dml.sql" name="06_DML_Insert.sql" stamp="1712889253348" updateReferences="true"/>
+</session>

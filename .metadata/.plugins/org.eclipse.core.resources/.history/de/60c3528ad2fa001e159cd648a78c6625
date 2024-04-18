@@ -1,0 +1,47 @@
+package days01;
+
+// 같은 패키지안에서 같은 이름의 클래스 생성은 불가능합니다
+// 멤버 메서드 : 클래스에 소속되어 클래스 객체에 종속된 메서드 입니다
+
+class Animal{
+	private String name;
+	private int age;
+	//멤버 메서드는 특별한 경우를 제외하곤 static 을 사용하지 않습니다
+	//현재 메서드를 호출하는 호출객체(a1, a2 등)를 별도의 매개변수로 받지 않아도 전달되어져 있습니다
+	public void prn() {
+		// 호출 객체는 this 로 전달됩니다. 안보입니다. 모르게 전달됩니다
+		System.out.println("저의 이름은 " + this.name +",나이는 "+ this.age +"살 입니다");
+	}
+	// 멤버 메서드는 같은 클래스내의 private 멤버변수에 자유롭게 접근이 가능합니다
+	
+	public void input(String name, int age) {
+		this.name= name;
+		this.age = age;
+	}
+}
+
+public class Method01 {
+
+	public static void main(String[] args) {
+		Animal a1 = new Animal();
+		Animal a2 = new Animal();
+//		a1.name = "댕댕이";
+//		a1.age = 10;
+//		a2.name = "냥냥이";
+//		a2.age = 6;
+		a1.input("댕댕이",10);
+		a2.input("냥냥이",6);
+		// System.out.println("저의 이름은 " + a1.name +",나이는 "+ a1.age +"살 입니다");
+		prn(a1);
+		a1.prn();
+		// System.out.println("저의 이름은 " + a2.name +",나이는 "+ a2.age +"살 입니다");
+		prn(a2);
+		a2.prn();
+	}
+
+	private static void prn(Animal a1) {
+		System.out.println("저의 이름은 " + a1.name +",나이는 "+ a1.age +"살 입니다");
+		
+	}
+	
+}

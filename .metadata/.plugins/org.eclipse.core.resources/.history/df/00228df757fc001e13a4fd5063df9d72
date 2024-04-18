@@ -1,0 +1,11 @@
+-- 12_GroupFunction.sql
+
+-- 테이블내의 하나의 필드값을 전체로 하는 함수
+
+-- 합계 (SUM)
+SELECT SUM(inprice)as "입고가격합계" FROM booklist;
+SELECT SUM(rentprice)as "대여가격합계" FROM booklist WHERE inprice>=18000;
+
+
+-- 갯수( COUNT )
+SELECT COUNT(*)AS"회원수" FROM memberlist; 

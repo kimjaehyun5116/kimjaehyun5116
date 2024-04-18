@@ -1,0 +1,17 @@
+package JDBC;
+
+public class RentDto {
+
+	private int numseq;
+	private String rentdate; // 날짜가 String 입니다
+	private int bnum;
+	private String subject;
+	private int mnum;
+	private String name;
+	private int rentprice;
+	private int disconut;
+	private int amount;
+	
+	
+	
+}

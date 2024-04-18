@@ -1,0 +1,12 @@
+package JDBC02;
+
+import BookDao.Object;
+
+public class BookDao extends Object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

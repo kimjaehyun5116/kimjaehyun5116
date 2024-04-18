@@ -1,0 +1,22 @@
+package days02;
+
+//static 키워드
+//멤버변수, 멤버메서드에 사용할 수 있는 키워드
+//정적 변수(클래스의 변수), 정적 메서드(클래스의 메서드)를 선언할 때 사용
+
+// 프로그램 실행전부터 메모리에 자리를 확보하고 실행되기를 기다리는 변수/메서드 (객체생성과 상관 X)
+
+class StaticA{
+	int num;
+	StaticA(){
+		num = 100;
+	}
+}
+
+public class ClassStatic {
+
+	public static void main(String[] args) {
+
+	}
+
+}

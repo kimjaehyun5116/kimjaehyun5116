@@ -1,0 +1,18 @@
+-- 08_DML_Select.sql
+
+-- 오라클 명령어 : select 문(검색)
+-- 가장 사용빈도수가 높은 명령
+
+--[1] scott 사용자가 관리하고 있는 테이블 목록
+select*from tab;
+select*from tabs;
+
+--[2] 특정 테이블의 구조 조회(필드 리스트/데이터 형식)
+desc booklist; -- 커멘드 창(sqlplus)에서 확인 요망
+desc memberlist; -- 커멘드 창(sqlplus)에서 확인 요망
+
+--[3] 테이블의 제약사항 조회
+SELECT*FROM USER_CONSTRAINTS; -- 모든 제약 사항
+SELECT*FROM USER_CONSTRAINTS where TABLE_NAME='RENTLIST'; -- 특정테이블의 제약사항
+SELECT*FROM USER_CONSTRAINTS where TABLE_NAME='BOOKLIST'; 
+SELECT*FROM USER_CONSTRAINTS where TABLE_NAME='MEMBERLIST'; 

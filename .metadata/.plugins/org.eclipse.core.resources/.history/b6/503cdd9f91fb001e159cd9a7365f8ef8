@@ -1,0 +1,28 @@
+package days02;
+
+//static 키워드
+//멤버변수, 멤버메서드에 사용할 수 있는 키워드
+//정적 변수(클래스의 변수), 정적 메서드(클래스의 메서드)를 선언할 때 사용
+
+// 프로그램 실행전부터 메모리에 자리를 확보하고 실행되기를 기다리는 변수/메서드 (객체생성과 상관 X)
+
+class StaticA{
+	int num;		// 인스턴스 변수
+	static int number = 200; // 스태틱 변수
+	StaticA(){
+		num = 100;
+	}
+}
+// 정의된 클래스는 순수한 정의내용일뿐 실제로 전재하는 객체는 아닙니다
+
+public class ClassStatic {
+
+	public static void main(String[] args) {
+		
+		StaticA s1 = new StaticA();
+		System.out.println(s1.num);
+		// 1. 인스턴스 객체 생성이 되어야 그 이후에 비로서 멤버변수에 접근해서 저장하고 읽어올수가 있습니다
+
+	}
+
+}
