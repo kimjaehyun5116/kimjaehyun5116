@@ -19,7 +19,7 @@ SELECT*FROM booklist;
 -- 반대로 title 필드명을 subject 필드명으로 수정합니다
 alter table booklist rename column title to subject;
 
--- rentlist 의 outprice 필드의 이름을 rentprice 로 수정하세요
+-- booklist 의 outprice 필드의 이름을 rentprice 로 수정하세요
 alter table booklist rename column outprice to rentprice;
 select*from rentlist;
 
