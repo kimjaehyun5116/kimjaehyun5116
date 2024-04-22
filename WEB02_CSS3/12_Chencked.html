@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_Chencked.html</title>
+    <style type="text/css">
+        #text{width:650; height: 150px; background: silver; overflow:hidden; transition-duration: 1s; }
+        input[type=checkbox]:checked ~ #text{ height: 0px; }
+    </style>
+</head>
+<body>
+    <input type="checkbox" />체크하면 아래 텍스트가 사라집니다<br><br>
+    <div id="text">
+        <h1>Lorem ipsum</h1>
+        <p>군사법원의 조직. 권한 및 재판관의 자격은 법률로 정한다. 국회의원은 국가이익을 우선하여/양심에 따라 직무를 행한다. 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다</p>
+    </div>
+</body>
+</html>
