@@ -79,8 +79,12 @@ public class Application {
 
         fireCar.sprayWater();
 
-        RacingCar recingCar = new RacingCar();
-
+        RacingCar racingCar = new RacingCar();
+        racingCar.soundHorn();
+        racingCar.run();
+        racingCar.soundHorn();
+        racingCar.stop();
+        racingCar.soundHorn();
 
     }
 }
