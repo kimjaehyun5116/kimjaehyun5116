@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="chap01-literal-and-variable-lecture-source/src"/>
+	<classpathentry kind="src" path="chap02-operater-lecture-source/src"/>
+	<classpathentry kind="src" path="chap03-method-and-api-lecture-source/src"/>
+	<classpathentry kind="src" path="chap04-control-flow-lecture-source/src"/>
+	<classpathentry kind="src" path="chap05-array-lscture-source/src"/>
+	<classpathentry kind="src" path="chap06-class-and-object-lecture-source/src"/>
+	<classpathentry kind="src" path="chap06-class-and-object-practice-question/src"/>
+	<classpathentry kind="src" path="chap07-object-array-lecture-source/src"/>
+	<classpathentry kind="src" path="chap08-inheritance-lecture-source/src"/>
+	<classpathentry kind="src" path="chap09-polymorphism-lecture-source/src"/>
+	<classpathentry kind="src" path="chap10-api-lecture-source/src"/>
+	<classpathentry kind="src" path="chap11-generics-lecture-source/src"/>
+	<classpathentry kind="src" path="chap12-collection-lecture-source/src"/>
+	<classpathentry kind="src" path="chap13-exception-lecture-source/src"/>
+	<classpathentry kind="src" path="chap14-io-lecture-source/src"/>
+	<classpathentry kind="src" path="home/dietmacro/src"/>
+	<classpathentry kind="src" path="home/musicDTO/src"/>
+	<classpathentry kind="src" path="home/test/src"/>
+	<classpathentry kind="src" path="home/test1/src"/>
+	<classpathentry kind="src" path="home/testProject/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
