@@ -9,13 +9,13 @@
         #tire{ position:relative; width:200px; height:200px; top:100px; background: red; border-radius: 50%; line-height: 200px; text-align: center; font-size: 50px; transition:2s; color:white; font-weight:bold;}
         /* base 에 마우스를 올리면  tire 가 오른쪽으로 이동(400px)+회전(180deg)+크게(1.5) 되도록 변경합니다 */
         #base:hover #tire{
-            transform:translateX(400px) rotate(180deg) scale(1.5); 
+            transform:translateX(1000px) rotate(300deg) scale(5); 
         }
     </style>
 </head>
 <body>
     <div id="base">
-        <div id="tire">타이어</div>    
+        <div id="tire" style="border-radius: 50%; overflow: hidden;" ><img src="images/1111.PNG"></div>    
     </div>
 </body>
 </html>
