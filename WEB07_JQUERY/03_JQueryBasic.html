@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_JQueryBasic.html</title>
+    <style type="text/css">
+      high-light {
+        background: yellow;
+      }
+      high-light-0 {
+        background: yellow;
+      }
+      high-light-1 {
+        background: orange;
+      }
+      high-light-2 {
+        background: blue;
+      }
+      high-light-3 {
+        background: green;
+      }
+      high-light-4 {
+        background: red;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- <script src="script/jquery-3.7.1.min.js"></script> -->
+    <script type="text/javaScript">
+
+
+
+      // . 선택자를 사용해 문서 객체를 선택한 후에 다음고 같은 위치를 지정한다
+      // 요소 : odd -> 홀수 번째에 위치한 문서 객체 선택
+      // 요소 : even -> 짝수 번째에 위치한 문서 객체 선택
+      // 요소 : first -> 첫번째에 위치한 문서 객체 선택
+      // 요소 : last -> 마지막에 위치한 문서 객체 선택
+
+      // 특정 필터 선택자
+      //$("요서선택:first-of-type") : 요소 무리중 첫번째 요소 선택
+      //$("요서선택:last-of-type") : 요소 무리중 마지막번째 요소 선택
+      //$("요서선택:nth-child(3)") : 요소 무리중 세번째 요소 선택
+      //$("요서선택:nth-child(3n)") : 요소 무리중 3의 배수번째 요소 선택
+      //$("요서선택:nth-last-of-type(2)") : 요소 무리중 뒤에서 두번째 선택
+      //$("요서선택:only-child") : 부모 요소내의 자식요소가 1개뿐인 요소 선택
+
+      $(function(){
+          $("#menu2 li:fist-of-type").css({"background-color":"#ff0"});
+          $("#menu2 li:last-of-type").css({"background-color":"#0ff"});
+          $("#menu3 li:only-child").css({"background-color":"#F00"});
+      });
+    </script>
+  </head>
+  <body>
+    <!-- 특정 필터 및 탐색 선택자 -->
+    <h1 class="high-light">탐색 선택자</h1>
+    <ul id="menu3">
+      <li>내용one</li>
+    </ul>
+    <ul id="menu2">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+    </ul>
+    <ul id="menu">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+      <li>내용5</li>
+      <li>내용6</li>
+      <li>내용7</li>
+      <li>내용8</li>
+      <li>내용9</li>
+      <li>내용10</li>
+    </ul>
+  </body>
+</html>
