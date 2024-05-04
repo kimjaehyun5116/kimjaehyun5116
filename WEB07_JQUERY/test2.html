@@ -5,47 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test2</title>
     <style type="text/css">
+      /*   
+      (수정 1)
+      사용되지 않은 태그입니다.
       section {
         width: 100%;
         display: flex;
         justify-content: space-between;
+      } 
+      */
+
+      /* (수정 7) 컨텐츠 중앙정렬을 위해 추가했습니다 */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      .base {
-        position: relative;
-        width: 100%;
+
+      .base1,
+      .base2 {
+        /* 
+        .base {
+        (수정 2)
+        html 코드에서 base1, base2로 분리되었기 때문에 selector를 추가합니다.*/
+
+        /*
+        (수정 3)
+        해당 프로젝트에서는 오브젝트의 위치를 절대값으로 지정하는 position: absolute 를 사용하지 않기 때문에
+        position relative 값을 설정해줄 필요가 없습니다 
+        position: relative; 
+        */
+
+        /*
+        (수정 4)
+        base의 width크기는 px로 지정해주겠습니다.
+        %수치는 부모요소의 수치에 대하여 적용되는 것이기 때문에 base를 부모요소로 설정하기 위해 px로 지정해줍니다.
+        width: 100%; 
+        */
+        width: 1200px;
         height: 200px;
         background-color: #efef81;
         margin-bottom: 20px;
+        border: 1px solid red;
       }
 
-      .base:first-child .title {
-        position: relative;
+      /* (수정 6) 적용 */
+      .base1__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* 
+      (수정 5)
+      .base:first-child 라는 selector는 이미 .title을 가리키고 있기 때문에 .title을 한번더 사용할 필요가 없습니다. 
+      .base1:first-child .title { 
+        */
+      .base1 .title {
+        /* position: relative;  -> (수정 3) */
         width: 400px;
         height: 100px;
         border: 1px solid black;
-        margin: 0 auto;
+        /* 
+        (수정 6)
+        title과 text의 중앙 정렬을 위해 margin: 0 auto를 각각 사용하는 것보다
+        해당 두 블럭을 부모요소로 감싸주어 display: flex 설정을 해주는게 더 좋습니다
+        margin: 0 auto; 
+        */
         font-size: 200%;
         line-height: 100px;
         font-weight: bold;
         text-align: center;
       }
-      .base:first-child .text {
-        position: relative;
+      /* 
+      (수정 5)
+      .base1:first-child .text { 
+      */
+      .base1 .text {
+        /* position: relative; */
         width: 400px;
         height: 100px;
         border: 1px solid black;
-        margin: 0 auto;
+        /* margin: 0 auto; */
       }
       .view {
-        position: relative;
+        /* position: relative; -> (수정 3) */
         width: 1100px;
         height: 200px;
-        border: 1px solid red;
-        margin: 0 auto;
+        /* border는 view가 아닌 base에 설정해주어야 화면이 작아지고 base가 세로로 정렬되면서 세로가 길어질때 같이 적용될 수 있습니다.
+        border: 1px solid red; */
+        /* margin: 0 auto; */
       }
 
       .circle {
-        position: relative;
+        /* position: relative; -> (수정 3) */
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -53,7 +106,7 @@
         float: left;
       }
       .rect {
-        position: relative;
+        /* position: relative; -> (수정 3) */
         width: 350px;
         height: 200px;
         border: 1px solid blue;
@@ -64,7 +117,7 @@
         height: 200px;
       }
       .rect .title {
-        position: relative;
+        /* position: relative; -> (수정 3) */
         width: 330px;
         height: 70px;
         font-size: 200%;
@@ -76,7 +129,7 @@
         color: white;
       }
       .rect .text {
-        position: relative;
+        /* position: relative; -> (수정 3) */
         width: 330px;
         height: 130px;
         border: 1px dotted blue;
@@ -86,76 +139,120 @@
         font-size: 90%;
       }
 
-      @media (min-width: 768px) and (max-width: 1024px) {
-        section {
-          flex-direction: column;
-        }
+      @media (max-width: 768px) {
+        /*
+        (수정 8) 적용
         .base {
+          display: flex;
           flex-direction: column;
-          width: 20%;
-          margin: 10px;
         }
+        */
         .view {
+          display: flex;
           flex-direction: column;
-          margin: 10px;
+        }
+
+        .base1,
+        .base2 {
+          width: 600px;
+        }
+        .base2 {
+          height: 400px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="base">
-      <div class="title">Content Title01</div>
-      <div class="text">
-        비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와
-        ·초소·유독 음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여
-        단심으로 할 수 있다
-      </div>
-    </div>
-    <div class="base">
-      <div class="view">
-        <div class="circle"><img src="images/Koala.jpg" /></div>
-        <div class="rect">
-          <div class="title">Segment</div>
-          <div class="text">
-            비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
-            경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
-            경우에 한하여 단심으로 할 수 있다.
-          </div>
-        </div>
-
-        <div class="circle"><img src="images/Koala.jpg" /></div>
-        <div class="rect">
-          <div class="title">Segment</div>
-          <div class="text">
-            비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
-            경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
-            경우에 한하여 단심으로 할 수 있다.
-          </div>
+    <div class="base1">
+      <!-- 
+      (수정 2)
+      위/아래 base를 분리해주어야 합니다
+      윈도우창이 작아질때 아래쪽 base의 height만 커져야 하기 때문입니다.
+      base1과 base2로 분리하겠습니다.
+      -->
+      <div class="base1__container">
+        <!-- (수정 6) 적용 -->
+        <div class="title">Content Title01</div>
+        <div class="text">
+          비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
+          경우와 ·초소·유독 음식물공급·포로에 관한 죄중 법률이 정한 경우에
+          한하여 단심으로 할 수 있다
         </div>
       </div>
     </div>
-    <div class="base">
+    <div class="base2">
+      <!-- 
+      (수정 8)
+      flex는 자식요소들을 정렬합니다 
+      코알라사진, Segment라는 title, 비상계엄 어쩌고 라는 text를 하나로 보고 각각 덩어리로 묶어주어야 합니다
+      그래야 화면이 작아질때 세로로 정렬이 가능합니다
+      컨텐츠를 총 4개로 볼때
+
+      제목
+      1 2
+      3 4
+      이런 화면을
+  
+      제목
+      1
+      2
+      3
+      4
+      이렇게 변경해주어야 하기 때문입니다-->
+
       <div class="view">
-        <div class="circle"><img src="images/Koala.jpg" /></div>
-        <div class="rect">
-          <div class="title">Segment</div>
-          <div class="text">
-            비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
-            경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
-            경우에 한하여 단심으로 할 수 있다.
+        <div class="bulk">
+          <div class="circle"><img src="images/Koala.jpg" /></div>
+          <div class="rect">
+            <div class="title">Segment</div>
+            <div class="text">
+              비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
+              경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
+              경우에 한하여 단심으로 할 수 있다.
+            </div>
           </div>
         </div>
 
-        <div class="circle"><img src="images/Koala.jpg" /></div>
-        <div class="rect">
-          <div class="title">Segment</div>
-          <div class="text">
-            비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
-            경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
-            경우에 한하여 단심으로 할 수 있다.
+        <div class="bulk">
+          <div class="circle"><img src="images/Koala.jpg" /></div>
+          <div class="rect">
+            <div class="title">Segment</div>
+            <div class="text">
+              비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
+              경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
+              경우에 한하여 단심으로 할 수 있다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="base2">
+      <div class="view">
+        <div class="bulk">
+          <div class="circle"><img src="images/Koala.jpg" /></div>
+          <div class="rect">
+            <div class="title">Segment</div>
+            <div class="text">
+              비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
+              경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
+              경우에 한하여 단심으로 할 수 있다.
+            </div>
+          </div>
+        </div>
+
+        <div class="bulk">
+          <div class="circle"><img src="images/Koala.jpg" /></div>
+          <div class="rect">
+            <div class="title">Segment</div>
+            <div class="text">
+              비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의
+              경우와 초병 · 초소 · 유독음식물공급·포로에 관한 죄중 법률이 정한
+              경우에 한하여 단심으로 할 수 있다.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+
