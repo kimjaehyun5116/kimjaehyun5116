@@ -1,3 +1,4 @@
 {
-  "less.format.newlineBetweenRules": true
+  "less.format.newlineBetweenRules": true,
+  "liveServer.settings.port": 5501
 }

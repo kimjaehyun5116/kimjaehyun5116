@@ -11,9 +11,18 @@
 	if( session.getAttribute("loginUser") == null ){
 		response.sendRedirect("071_LoginForm.jsp");
 	}else{
-		out.print("<h2>" + session.getAttribute("loginUser") + "(" +session.getAttribute("name") + ")님이 로그인하셨습니다</h2>");
+		out.print("<h2>" 
+			+ session.getAttribute("loginUser") + "(" + session.getAttribute("name") 
+			+ ")님이 로그인하셨습니다</h2>");
 	}
 %>
-<input type="button" value="로그아웃"onClick="location.href='074_logout.jsp'" />
+<input type="button" value="로그아웃" onClick="location.href='074_logout.jsp'" />
 </body>
 </html>
+
+
+
+
+
+
+

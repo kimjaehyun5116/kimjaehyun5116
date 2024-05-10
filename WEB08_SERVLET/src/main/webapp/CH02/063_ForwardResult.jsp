@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,7 @@
 <body>
 <%
 	String name = (String)request.getAttribute("name");
-	// Attribute 의 저장데이터 자료형이 Object 이므로 꺼내서 변수에 저장할때 형변환이 필요합니다
+	// Attribute 의 저장데이터 자료형이 Object  이므로 꺼내서 변수에 저장할때 형변환이 필요합니다
 	String age=request.getParameter("age");
 %>
 
