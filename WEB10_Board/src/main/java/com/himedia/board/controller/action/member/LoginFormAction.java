@@ -1,6 +1,8 @@
-package com.himedia.board.controller.action;
+package com.himedia.board.controller.action.member;
 
 import java.io.IOException;
+
+import com.himedia.board.controller.action.Action;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;

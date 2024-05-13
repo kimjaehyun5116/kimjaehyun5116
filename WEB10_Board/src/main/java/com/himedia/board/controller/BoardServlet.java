@@ -1,11 +1,8 @@
-package com.himedia.board;
+package com.himedia.board.controller;
 
 import java.io.IOException;
 
 import com.himedia.board.controller.action.Action;
-import com.himedia.board.controller.action.LoginAction;
-import com.himedia.board.controller.action.LoginFormAction;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -36,10 +33,15 @@ public class BoardServlet extends HttpServlet {
 		System.out.println("command : " + command);
 		
 		Action ac = null;
-		if( command.equals("loginForm") ) ac = new LoginFormAction();
-		else if(command.equals("login") ) ac = new LoginAction();
+	    ActionFactory af = ActionFactory.getInstance();
+	    ac = af.getAction(command);
+	    if( ac == null) System.out.println("2. Action 전달 오류");
+	    else ac.execute(request,  response);
+	    
 		
-		ac.execute(request, response);
+//		if( command.equals("loginForm") ) ac = new LoginFormAction();
+//		else if(command.equals("login") ) ac = new LoginAction();
+//		
 		
 		/*
 		if( command.equals("loginForm") ) {
