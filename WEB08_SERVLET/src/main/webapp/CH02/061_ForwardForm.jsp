@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,5 +13,6 @@
 	<input type="hidden" name="abc" value="가나다라">
 	<input type="submit" value="입장">
 </form>
+
 </body>
 </html>

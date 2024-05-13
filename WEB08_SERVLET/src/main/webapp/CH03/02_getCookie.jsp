@@ -9,12 +9,13 @@
 <body>
 
 <%
-//쿠키내용 한번에 다 얻어오는 명령- 쿠키객체 배열로 얻어옵니다
-Cookie[] cookies = request.getCookies();
+//쿠키내용 한번에 다 얻어오는 명령-쿠키객체 배열로 얻어옵니다
+Cookie[] cookies = request.getCookies(); 
 
 for (Cookie c : cookies) {
-	out.println("<h2>"+c.getName() + " : "+ c.getValue() + " </h2>");
+	out.println( "<h2>" + c.getName() + " : " + c.getValue() + "</h2>");
 }
 %>
+
 </body>
 </html>

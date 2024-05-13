@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +6,20 @@
 <title>05_Select.jsp</title>
 </head>
 <body>
+<%
+request.setCharacterEncoding("UTF-8");
+response.setCharacterEncoding("UTF-8");
+%>
 	<form method="get" action="05_Select_to.jsp">
-	<label for="job">직업</label><br>
-	<select id="job" name="job" size="1">
-		<option value="">선택하세요</option>
-		<option value="학생">학생</option>
-		<option value="컴퓨터/인터넷">컴퓨터/인터넷</option>
-		<option value="언론">언론</option>
-		<option value="공무원">공무원</option>
-		<option value="군인">군인</option>
-		<option value="서비스업">서비스업</option>
+		<label for="job">직업</label><br>
+		<select id="job" name="job" size="1" >
+			<option value="">선택하세요</option>
+			<option value="학생">학생</option>
+			<option value="컴퓨터/인터넷">컴퓨터/인터넷</option>
+			<option value="언론">언론</option>
+			<option value="공무원">공무원</option>
+			<option value="군인">군인</option>
+			<option value="서비스업">서비스업</option>
 		</select><br><br><br>
 		
 		<label for="interest" style="float: left;">관심분야</label><br>
@@ -26,8 +29,8 @@
 			<option value="생두">생두</option>
 			<option value="원두">원두</option>
 			<option value="핸드드립">핸드드립</option>
-			</select><br><br>
-			<input type="submit" value="전송">
-	</form>
+		</select><br><br>
+		<input type="submit" value="전송" >
+</form>
 </body>
 </html>
