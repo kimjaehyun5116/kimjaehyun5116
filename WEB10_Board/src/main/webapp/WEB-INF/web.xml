@@ -4,7 +4,7 @@
     <description></description>
     <display-name>BoardServlet</display-name>
     <servlet-name>BoardServlet</servlet-name>
-    <servlet-class>com.himedia.board.BoardServlet</servlet-class>
+    <servlet-class>com.himedia.board.controller.BoardServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>BoardServlet</servlet-name>
@@ -19,4 +19,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>JoinFormAction</display-name>
+    <servlet-name>JoinFormAction</servlet-name>
+    <servlet-class>com.himedia.board.controller.action.JoinFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JoinFormAction</servlet-name>
+    <url-pattern>/JoinFormAction</url-pattern>
+  </servlet-mapping>
 </web-app>

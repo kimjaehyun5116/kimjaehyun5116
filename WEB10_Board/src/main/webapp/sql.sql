@@ -3,7 +3,7 @@ CREATE TABLE `board`.`board` (
   `pass` VARCHAR(45) NOT NULL,
   `userid` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `tile` VARCHAR(45) NOT NULL,
+  `title` VARCHAR(45) NOT NULL,
   `content` VARCHAR(1000) NOT NULL,
   `readcount` INT NULL DEFAULT 0,
   `writedate` DATETIME NULL DEFAULT now(),
