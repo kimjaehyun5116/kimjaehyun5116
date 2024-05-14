@@ -18,19 +18,18 @@ public class Dbm {
 		try {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, id, pass);
-			
-		}catch (ClassNotFoundException e) {e.printStackTrace();
-		
-		}catch (SQLException e) {e.printStackTrace();}
-		return con; //연결객체 리턴
+		} catch (ClassNotFoundException e) {	e.printStackTrace();
+		} catch (SQLException e) {	e.printStackTrace();	}
+		return con;   // 연결객체 리턴
 	}
+	
 	public static void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
 		try {
-			if(con!=null)con.close();
-			if(pstmt!=null)pstmt.close();
-			if(rs!=null)rs.close();
-			
-		}catch(SQLException e) { e.printStackTrace();}
-		// 전달 받은 객체 close
+			if( con!=null) con.close();
+			if( pstmt!=null) pstmt.close();
+			if( rs!=null) rs.close();
+		} catch (SQLException e) {  e.printStackTrace();  }
+		// 전달 받은 객체  close
 	}
+	
 }

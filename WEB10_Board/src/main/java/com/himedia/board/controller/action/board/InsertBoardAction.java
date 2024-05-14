@@ -1,37 +1,33 @@
 package com.himedia.board.controller.action.board;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import com.himedia.board.controller.action.Action;
 import com.himedia.board.dao.BoardDao;
 import com.himedia.board.dto.BoardDto;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class MainAction implements Action {
+public class InsertBoardAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 게시판의 게시물을 모두 조회해서  request 에 담고 main.jsp  로  포워딩합니다
+		
 		BoardDao bdao = BoardDao.getInstance();
-		ArrayList<BoardDto> list =  bdao.getAllBoard();
-		request.setAttribute("boardList", list);
-		RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
-		rd.forward(request, response);
+		BoardDto bdto = new BoardDto();
+		
+		bdto.setUserid( request.getParameter("userid") ) ;
+		bdto.setPass( request.getParameter("pass") );
+		bdto.setTitle( request.getParameter("title") );
+		bdto.setEmail( request.getParameter("email") );
+		bdto.setContent( request.getParameter("content") );
+		
+		bdao.insertBoard( bdto );
+		
+		response.sendRedirect("board.do?command=main");
+
 	}
 
 }
-
-
-
-
-
-
-
-
-
-

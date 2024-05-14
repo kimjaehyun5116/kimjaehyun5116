@@ -1,12 +1,13 @@
 package com.himedia.board.dto;
 
 public class MemberDto {
-
+	
 	private String userid;
 	private String name;
 	private String pwd;
 	private String email;
 	private String phone;
+	
 	public String getUserid() {
 		return userid;
 	}
@@ -37,6 +38,5 @@ public class MemberDto {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
 	
 }
