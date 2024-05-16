@@ -37,7 +37,6 @@ public class BoardDao {
 				bdto.setContent( rs.getString("content") );
 				bdto.setReadcount( rs.getInt("readcount") );
 				bdto.setWritedate( rs.getTimestamp("writedate" ));
-				
 				list.add(bdto);
 			}
 		} catch (SQLException e) { e.printStackTrace();
@@ -124,7 +123,7 @@ public class BoardDao {
 	public ArrayList<ReplyDto> getReply(int num) {
 		ArrayList<ReplyDto> list = new ArrayList<ReplyDto>();
 		con = Dbm.getConnection();
-		String sql = "select * from reply where boardnum=? ORDER BY replynum desc";
+		String sql = "select * from reply where boardnum=?";
 		try {
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1,  num);
@@ -143,70 +142,8 @@ public class BoardDao {
 		
 		return list;
 	}
-
-	public void insertReply(ReplyDto rdto) {
-		con = Dbm.getConnection();
-		String sql = "insert into reply( boardnum, userid, content ) values(?, ?, ?)";
-		try {
-			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, rdto.getBoardnum());
-			pstmt.setString(2,  rdto.getUserid());
-			pstmt.setString(3,  rdto.getContent());
-			pstmt.executeUpdate();
-		} catch (SQLException e) {e.printStackTrace();
-		}finally { Dbm.close(con, pstmt, rs);
 	
-		}
-		
-	}
-
-	public void deleteReply(int replynum) {
-		
-		con = Dbm.getConnection();
-		String sql = "delete from reply where replynum=?";
-		try {
-			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, replynum);
-			pstmt.executeUpdate();
-		} catch (SQLException e) {e.printStackTrace();
-		}finally { Dbm.close(con, pstmt, rs);
-	
-		}
-		
-	}
-
-	public int getReplyCount(int num) {
-		int count = 0;
-		con = Dbm.getConnection();
-		String sql = "select count(*) as cnt from reply where boardnum=?";
-		try {
-			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, num);
-			rs = pstmt.executeQuery();
-			if( rs.next())
-				count = rs.getInt("cnt");
-		} catch (SQLException e) {e.printStackTrace();
-		}finally {Dbm.close(con, pstmt, rs);
-		}
-		return count;
-	}
-
-	public int getAllCount() {
-		int count = 0;
-		con = Dbm.getConnection();
-		String sql = "select count(*) as cnt from board";
-		try {
-			pstmt = con.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-			if( rs.next())
-				count = rs.getInt("cnt");
-		} catch (SQLException e) {e.printStackTrace();
-		}finally {Dbm.close(con, pstmt, rs); }
-		
-		return count;
-	}
 }
-
 
 
 

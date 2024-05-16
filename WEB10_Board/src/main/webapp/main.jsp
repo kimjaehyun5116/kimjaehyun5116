@@ -43,10 +43,7 @@
 					<div class="col">
 						<a style="text-decoration:none" href="board.do?command=boardView&num=${board.num}" >
 							${board.title}
-						</a>&nbsp;
-						<c:if test="${board.replycnt>0}">
-							<span style="color:red; font-weight:bold"> [${board.replycnt}]</span>
-						</c:if>
+						</a>
 					</div>
 					<div class="col">${board.userid}</div>
 					<div class="col"><fmt:formatDate value="${board.writedate}" /></div>

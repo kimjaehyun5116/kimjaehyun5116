@@ -13,6 +13,7 @@ public class DeleteBoardAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		int num = Integer.parseInt( request.getParameter("num") );
 		BoardDao bdao = BoardDao.getInstance();
 		bdao.deleteBoard(num);
@@ -20,7 +21,6 @@ public class DeleteBoardAction implements Action {
 		// request.setAttribute("delete", "OK");
 		request.getRequestDispatcher("board/deleteOk.jsp").forward(request, response);
 		
-
 	}
 
 }

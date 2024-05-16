@@ -172,15 +172,6 @@ function deleteBoard(pass, num){
 }
 
 
-function replyCheck(){
-	if( document.reply.content.value==""){
-		alert("댓글을 입력하세요");
-		document.reply.content.focus();
-		return false;
-	}
-	return true;
-}
-
 
 
 
