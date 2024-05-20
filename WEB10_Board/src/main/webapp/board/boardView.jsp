@@ -36,8 +36,21 @@
 			<div class="text">${board.title}</div>
 		</div>
 		<div class="field" style="margin-bottom : 15px; ">
-			<div class="label">내용</div>
-			<div class="text" style="font-size:140%;"><pre>${board.content}</pre></div>
+			<div class="label" >내용</div>
+			<div class="text" style="font-size:140%;flex:1.5;">
+				<pre>${board.content}</pre>
+			</div>
+			<div class="label" style="flex:0.5;">이미지</div>
+			<div class="text" style="flex:2;">
+				<c:choose>
+					<c:when test="${empty  board.savefilename}">
+						<img src="images/noname.jpg" width="250" />
+					</c:when>
+					<c:otherwise>
+						<img src="images/${board.savefilename}" width="350" />
+					</c:otherwise>
+				</c:choose>
+			</div>
 		</div>
 		<div class="login-button">
             <input type="button" class="btn-login" value="수정" 
@@ -52,9 +65,25 @@
 		<div class="reply_row">
 			<div class="reply_col reply_title">작성자</div>
 			<div class="reply_col reply_title">작성일시</div>
-			<div class="reply_col reply_title">댓글</div>
-			<div class="reply_col reply_title">삭제</div>
+			<div class="reply_col reply_title" style="text-align:center">댓글</div>
+			<div class="reply_col reply_title">작성/삭제</div>
 		</div>
+		<form action="board.do" name="reply">
+				<input type="hidden" name="command" value="insertReply" /> 
+				<input type="hidden" name="userid" value="${loginUser.userid}" />
+				<input type="hidden" name="boardnum" value="${board.num}" />
+				<div class="reply_row">
+						<div class="reply_col">${loginUser.userid}</div>
+						<div class="reply_col">
+							<c:set var="now" value="<%=new java.util.Date()%>" />
+							<fmt:formatDate value="${now}" pattern="MM/dd hh:mm"/>
+						</div>
+						<div class="reply_col"><input type="text" name="content" size="75"></div>
+						<div class="reply_col">
+							<input type="submit" value="답글 작성" onClick="return replyCheck();">
+						</div>
+				</div>
+		</form>
 		
 		<c:forEach items="${replyList}" var="reply">
 			<div class="reply_row">
@@ -63,7 +92,12 @@
 					<fmt:formatDate value="${reply.writedate}" pattern="MM/dd hh:mm"/>
 				</div>
 				<div class="reply_col">${reply.content}</div>
-				<div class="reply_col"><input type="button" value="삭제" /></div>
+				<div class="reply_col">
+					<c:if test="${reply.userid == loginUser.userid}">
+						<input type="button" value="삭제"  
+						onClick="location.href='board.do?command=deleteReply&replynum=${reply.replynum}&boardnum=${reply.boardnum}'"/>
+					</c:if>
+				</div>
 			</div>
 		</c:forEach>
 	</div>

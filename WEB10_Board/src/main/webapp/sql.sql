@@ -40,9 +40,19 @@ insert into board(pass, userid, email, title, content)
 values('1234', 'hong1', 'hong1@naver.com', '2024년 겨울', '몹시 추울꺼 같아요... 다들 건강 유의 하세요....');
 insert into board(pass, userid, email, title, content)
 values('1234', 'hong2', 'hong2@naver.com', '맛집공유', '맛집공유 및 추천해주세요');
+insert into board(pass, userid, email, title, content)
+values('1234', 'hong1', 'hong1@naver.com', '첫방문입니다', '반갑습니다. 앞으로 많은 격려와 지도편달 부탁드립니다');
+insert into board(pass, userid, email, title, content)
+values('1234', 'hong2', 'hong2@naver.com', '돼지골마을', '돼지 삼겹살이 맛있습니다');
+insert into board(pass, userid, email, title, content)
+values('1234', 'hong3', 'hong3@naver.com', '게시판 개설', '축하드립니다.  무궁한 발전을 기원할께요');
+insert into board(pass, userid, email, title, content)
+values('1234', 'hong1', 'hong1@naver.com', '2024년 겨울', '몹시 추울꺼 같아요... 다들 건강 유의 하세요....');
+insert into board(pass, userid, email, title, content)
+values('1234', 'hong2', 'hong2@naver.com', '맛집공유', '맛집공유 및 추천해주세요');
 
 select * from member
-select * from board;
+select * from board order by num desc;
 
 
 
@@ -77,10 +87,14 @@ insert into reply( boardnum, userid, content) values(6, 'hong2', '또 뵐께요 
 
 
 
+select * from board limit 10 offset 10;
 
 
 
+alter table board add column image varchar(50);
+alter table board add column savefilename varchar(50);
 
+select * from board;
 
 
 
