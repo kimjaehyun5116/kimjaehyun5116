@@ -4,7 +4,7 @@ import fc.java.model.CarDTO;
 
 import java.util.Scanner;
 
-public class CatTest {
+public class CarTest {
     public static void main(String[] args) {
         // Q. 자동차의 정보를 [키보드로부터 입력] 받아서 [다른 메서드]로 이동 해야 되는 경우를 생각해보자
         Scanner sc=new Scanner(System.in);
