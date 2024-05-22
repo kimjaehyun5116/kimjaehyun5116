@@ -16,10 +16,13 @@ public class ScannerTest {
         String str=scan.next(); // 공백 전까지
         System.out.println("str = " + str);
 
-        scan.nextLine();    // 버퍼비우기(스트림 비우기)
+        scan.nextLine();    // 버퍼비우기(스트림 비우기 이전 스캔에서 공백 이후의 데이터가 남아있다)
 
         System.out.print("문자열을 입력하세요 : ");
         String str2=scan.nextLine();    // 공백도 인식
         System.out.println("str2 = " + str2);
+
+        scan.close(); // 스캔을 종료
+
     }
 }
