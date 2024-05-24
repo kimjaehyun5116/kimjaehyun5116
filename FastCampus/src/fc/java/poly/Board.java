@@ -13,7 +13,7 @@ public class Board extends Object{ // toString()
     // Override (재정의)
     @Override
     public String toString() {
-        System.out.println(super.toString()); // 상위클래스의 메서드 호출(부모의)
+        // System.out.println(super.toString()); // 상위클래스의 메서드 호출(부모의)
         return title;
     }
 }
