@@ -2,6 +2,8 @@
 
 #wrap{ width:1024px; margin: 0 auto; border:1px solid red;}
 
+a{ text-decoration: none;}
+
 header{
 	width:100%;
 	display: flex;
@@ -59,13 +61,11 @@ header{
 	background-color: blueviolet;
 	margin:10px auto;
 	left:10px;
+	position:absolute;
 }
 .hmenu div:nth-child(1){  top:5px; }
 .hmenu div:nth-child(2){	top:15px; }
 .hmenu div:nth-child(3){	top:25px; }
-
-
-
 
 #main_img{
 	flex:1;

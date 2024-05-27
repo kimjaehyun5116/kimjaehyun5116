@@ -27,6 +27,8 @@ public class LoginAction implements Action {
 			request.setAttribute("message", "아이디가 없습니다");
 		else if( !mvo.getPwd().equals(pwd) ) 
 			request.setAttribute("message", "패스워드가 틀립니다");
+		else if( mvo.getUseyn().equals("N") ) 
+			request.setAttribute("message", "해당 계정은 휴면상태이거나 탈퇴상태입니다. 관리자에게 문의하세요");
 		else if( mvo.getPwd().equals(pwd) ) {
 			url = "shop.do?command=index";
 			HttpSession session = request.getSession();
