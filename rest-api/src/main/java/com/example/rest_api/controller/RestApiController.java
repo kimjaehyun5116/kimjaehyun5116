@@ -1,8 +1,10 @@
 package com.example.rest_api.controller;
 
 import com.example.rest_api.model.BookQueryParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @RestController
 @RequestMapping("/api")
 public class RestApiController {
@@ -65,5 +67,30 @@ public class RestApiController {
 
     // TODO Parameter 2가지 받습니다. int 형태로 받아서 두 수의 덧셈, 곱셈
     // TODO String 타입 boolean 타입도 받아보기
-
+    @GetMapping(path ="/calculate")
+    public String calculate(
+            @RequestParam int num1,
+            @RequestParam int num2
+    ){
+        int sum = num1+num2;
+        int product = num1*num2;
+        return "Sum : " + sum + ", Product : " + product;
+    }
+@GetMapping(path = "/process")
+    public String process(
+            @RequestParam String text,
+            @RequestParam boolean flag
+){
+        return "Received text : " + text + ", Received flag : " + flag;
+}
+@DeleteMapping(path = {
+        "/user/{userName}/delete",
+        "/user/{userName}/del"
+    }
+) // path 를 사용안해도 같지만 path 를 사용하면 여러개의 주소를 지정할 수 도있음
+public void delete(
+        @PathVariable String userName
+){
+    log.info("user-naem : {}", userName);
+}
 }
