@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="712bc384-c8a8-4a9f-b5a0-aa20b098f127" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../JavaProject04/이력서.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/ExceptionApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/controller/RestApiBController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/controller/RestApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/controller/UserApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/exception/RestApiExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/model/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/java/com/example/exception/model/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exception/src/test/java/com/example/exception/ExceptionApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/src/main/java/com/example/hello/springboot/HelloSpringbootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello-springboot/src/test/java/com/example/hello/springboot/HelloSpringbootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/RestApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/controller/PostApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/controller/PutApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/controller/ResponseApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/controller/RestApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/model/BookQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/model/BookRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/java/com/example/rest_api/model/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-api/src/test/java/com/example/rest_api/RestApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/ValidationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/annotation/PhoneNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/annotation/YearMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/controller/UserApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/exception/ValidationExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/model/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/model/UserRegisterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/validator/PhoneNumberValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/java/com/example/validation/validator/YearMonthValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../validation/src/test/java/com/example/validation/ValidationApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kimjaehyun5116"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kimjaehyun5116/kimjaehyun5116.git",
+    "accountId": "40bbc4be-1181-41bb-a387-16c4bcae9162"
+  }
+}]]></component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="없음" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2haX8Q8FJjBgIOjJ83Lbv9ZNSA2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.jpa 빌드.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.JpaApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ethankim/kimjaehyun5116/jpa/build.gradle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="jpa.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jpa.JpaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="712bc384-c8a8-4a9f-b5a0-aa20b098f127" name="변경" comment="" />
+      <created>1717833001789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717833001789</updated>
+      <workItem from="1717833003280" duration="4133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
