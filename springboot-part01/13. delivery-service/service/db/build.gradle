@@ -4,9 +4,9 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
-group = 'org.delivery'
-version = '1.0-SNAPSHOT'
-sourceCompatibility = '11'
+group 'org.delivery'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '17'
 
 configurations {
     compileOnly {
