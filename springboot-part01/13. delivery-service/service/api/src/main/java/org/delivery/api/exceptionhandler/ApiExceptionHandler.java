@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Slf4j
 @RestControllerAdvice
 @Order(value = Integer.MIN_VALUE)   // 최우선처리
-public class ApiexceptionHandler {
+public class ApiExceptionHandler {
 
     @ExceptionHandler(value = ApiException.class)
     public ResponseEntity<Api<Object>> apiException(
