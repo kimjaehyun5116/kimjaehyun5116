@@ -2,6 +2,7 @@ package org.delivery.api.domain.user.converter;
 
 import lombok.RequiredArgsConstructor;
 import org.delivery.api.common.annotation.Converter;
+import org.delivery.api.common.api.Api;
 import org.delivery.api.common.error.ErrorCode;
 import org.delivery.api.common.exception.ApiException;
 import org.delivery.api.domain.user.controller.model.UserRegisterRequest;
@@ -14,10 +15,10 @@ import java.util.Optional;
 @Converter
 public class UserConverter {
 
-    public UserEntity toEntity(UserRegisterRequest request) {
+    public UserEntity toEntity(UserRegisterRequest request){
 
         return Optional.ofNullable(request)
-                .map(it -> {
+                .map(it ->{
                     // to entity
                     return UserEntity.builder()
                             .name(request.getName())
@@ -30,8 +31,9 @@ public class UserConverter {
     }
 
     public UserResponse toResponse(UserEntity userEntity) {
+
         return Optional.ofNullable(userEntity)
-                .map(it -> {
+                .map(it ->{
                     // to response
                     return UserResponse.builder()
                             .id(userEntity.getId())
@@ -45,7 +47,6 @@ public class UserConverter {
                             .build();
                 })
                 .orElseThrow(()-> new ApiException(ErrorCode.NULL_POINT, "UserEntity Null"));
+
     }
 }
-
-

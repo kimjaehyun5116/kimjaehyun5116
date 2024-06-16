@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class TokenResponse {
 
     private String accessToken;
-    private LocalDateTime accessTokenExpireAt;
+    private LocalDateTime accessTokenExpiredAt;
     private String refreshToken;
     private LocalDateTime refreshTokenExpiredAt;
 

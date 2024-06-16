@@ -1,10 +1,6 @@
 package org.delivery.db.user;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.delivery.db.BaseEntity;
 import org.delivery.db.user.enums.UserStatus;
@@ -38,6 +34,9 @@ public class UserEntity extends BaseEntity {
     private String address;
 
     private LocalDateTime registeredAt;
+
     private LocalDateTime unregisteredAt;
+
     private LocalDateTime lastLoginAt;
+
 }

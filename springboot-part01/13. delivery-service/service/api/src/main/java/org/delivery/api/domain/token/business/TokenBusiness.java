@@ -9,6 +9,7 @@ import org.delivery.api.domain.token.converter.TokenConverter;
 import org.delivery.api.domain.token.service.TokenService;
 import org.delivery.db.user.UserEntity;
 
+import javax.swing.text.html.Option;
 import java.util.Optional;
 
 @Business
@@ -35,7 +36,9 @@ public class TokenBusiness {
                     var refreshToken = tokenService.issueRefreshToken(userId);
                     return tokenConverter.toResponse(accessToken, refreshToken);
                 })
-                .orElseThrow(()-> new ApiException(ErrorCode.NULL_POINT));
+                .orElseThrow(
+                        ()-> new ApiException(ErrorCode.NULL_POINT)
+                );
     }
 
     public Long validationAccessToken(String accessToken){

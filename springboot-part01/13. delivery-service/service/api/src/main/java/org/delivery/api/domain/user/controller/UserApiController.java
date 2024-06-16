@@ -1,7 +1,6 @@
 package org.delivery.api.domain.user.controller;
 
 import lombok.RequiredArgsConstructor;
-
 import org.delivery.api.common.annotation.UserSession;
 import org.delivery.api.common.api.Api;
 import org.delivery.api.domain.user.business.UserBusiness;
@@ -26,7 +25,7 @@ public class UserApiController {
     public Api<UserResponse> me(
             @UserSession User user
     ){
-        var response = userBusiness.me(userId);
+        var response = userBusiness.me(user);
         return Api.OK(response);
     }
 }

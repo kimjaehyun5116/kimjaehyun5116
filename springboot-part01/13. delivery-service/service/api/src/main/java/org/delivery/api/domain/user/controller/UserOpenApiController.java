@@ -7,7 +7,6 @@ import org.delivery.api.domain.user.business.UserBusiness;
 import org.delivery.api.domain.user.controller.model.UserLoginRequest;
 import org.delivery.api.domain.user.controller.model.UserRegisterRequest;
 import org.delivery.api.domain.user.controller.model.UserResponse;
-import org.delivery.api.domain.user.service.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +21,7 @@ public class UserOpenApiController {
 
     private final UserBusiness userBusiness;
 
+
     // 사용자 가입 요청
     @PostMapping("/register")
     public Api<UserResponse> register(
@@ -33,7 +33,6 @@ public class UserOpenApiController {
     }
 
     // 로그인
-
     @PostMapping("/login")
     public Api<TokenResponse> login(
             @Valid

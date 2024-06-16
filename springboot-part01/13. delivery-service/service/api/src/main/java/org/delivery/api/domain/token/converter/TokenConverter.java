@@ -1,6 +1,5 @@
 package org.delivery.api.domain.token.converter;
 
-import antlr.Token;
 import lombok.RequiredArgsConstructor;
 import org.delivery.api.common.annotation.Converter;
 import org.delivery.api.common.error.ErrorCode;
@@ -23,9 +22,9 @@ public class TokenConverter {
 
         return TokenResponse.builder()
                 .accessToken(accessToken.getToken())
-                .accessTokenExpireAt(accessToken.getExpiresAt())
+                .accessTokenExpiredAt(accessToken.getExpiredAt())
                 .refreshToken(refreshToken.getToken())
-                .refreshTokenExpiredAt(refreshToken.getExpiresAt())
+                .refreshTokenExpiredAt(refreshToken.getExpiredAt())
                 .build();
 
     }

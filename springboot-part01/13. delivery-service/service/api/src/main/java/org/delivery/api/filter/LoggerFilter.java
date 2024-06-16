@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @Slf4j
 @Component
 public class LoggerFilter implements Filter {
@@ -20,6 +19,7 @@ public class LoggerFilter implements Filter {
 
         var req = new ContentCachingRequestWrapper( (HttpServletRequest) request );
         var res = new ContentCachingResponseWrapper( (HttpServletResponse) response );
+
         log.info("INIT URI : {}", req.getRequestURI());
 
         chain.doFilter(req, res);

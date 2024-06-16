@@ -17,22 +17,22 @@ import java.util.Objects;
 @Service
 public class TokenService {
 
-    private final TokenHelperIfs tokenHelperIPfs;
+    private final TokenHelperIfs tokenHelperIfs;
 
     public TokenDto issueAccessToken(Long userId){
         var data = new HashMap<String, Object>();
         data.put("userId", userId);
-        return tokenHelperIPfs.issueAccessToken(data);
+        return tokenHelperIfs.issueAccessToken(data);
     }
 
     public TokenDto issueRefreshToken(Long userId) {
         var data = new HashMap<String, Object>();
         data.put("userId", userId);
-        return tokenHelperIPfs.issueRefreshToken(data);
+        return tokenHelperIfs.issueRefreshToken(data);
     }
 
     public Long validationToken(String token) {
-        var map = tokenHelperIPfs.validationTokenWithThrow(token);
+        var map = tokenHelperIfs.validationTokenWithThrow(token);
 
         var userId = map.get("userId");
         Objects.requireNonNull(userId, () -> {throw new ApiException(ErrorCode.NULL_POINT);});
