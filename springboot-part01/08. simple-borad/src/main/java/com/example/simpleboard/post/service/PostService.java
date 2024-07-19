@@ -1,6 +1,5 @@
 package com.example.simpleboard.post.service;
 
-
 import com.example.simpleboard.board.db.BoardRepository;
 import com.example.simpleboard.common.Api;
 import com.example.simpleboard.common.Pagination;
@@ -22,7 +21,6 @@ public class PostService {
 
     private final PostRepository postRepository;
     private final BoardRepository boardRepository;
-    private final ReplyService replyService;
 
     public PostEntity create(
             PostRequest postRequest
@@ -30,7 +28,7 @@ public class PostService {
         var boardEntity = boardRepository.findById(postRequest.getBoardId()).get(); // << 임시 고정
 
         var entity = PostEntity.builder()
-                .boardEntity(boardEntity) // << 임시 고정
+                .boardEntity(boardEntity)
                 .userName(postRequest.getUserName())
                 .password(postRequest.getPassword())
                 .email(postRequest.getEmail())
@@ -44,29 +42,29 @@ public class PostService {
         return postRepository.save(entity);
     }
 
-    /*
-    * 1. 게시글이 있는가?
-    * 2. 비밀번호가 맞는가?
-    * */
-
+    /**
+     * 1. 게시글이 있는가?
+     * 2. 비밀번호가 맞는가?
+     */
     public PostEntity view(PostViewRequest postViewRequest) {
 
         return postRepository.findFirstByIdAndStatusOrderByIdDesc(postViewRequest.getPostId(), "REGISTERED")
-                .map(it -> {
+                .map( it -> {
                     // entity 존재
-                    if(!it.getPassword().equals(postViewRequest.getPassword())) {
+                    if(!it.getPassword().equals(postViewRequest.getPassword())){
                         var format = "패스워드가 맞지 않습니다 %s vs %s";
                         throw new RuntimeException(String.format(format, it.getPassword(), postViewRequest.getPassword()));
                     }
 
                     // 답변글도 같이 적용
-/*                    var replyList = replyService.findAllByPostId(it.getId());
-                    it.setReplyList(replyList);*/
+/*                var replyList = replyService.findAllByPostId(it.getId());
+                it.setReplyList(replyList);*/
+
                     return it;
 
                 }).orElseThrow(
                         ()-> {
-                            return new RuntimeException("해당 게시글이 존재하지 않습니다 : "+postViewRequest.getPostId());
+                            return new RuntimeException("해당 게시글이 존재 하지 않습니다 : "+postViewRequest.getPostId());
                         }
                 );
     }
@@ -82,6 +80,7 @@ public class PostService {
                 .totalPage(list.getTotalPages())
                 .build()
                 ;
+
         var response = Api.<List<PostEntity>>builder()
                 .body(list.toList())
                 .pagination(pagination)

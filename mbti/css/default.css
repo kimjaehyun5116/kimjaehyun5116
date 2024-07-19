@@ -1,0 +1,118 @@
+body {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 화면 높이에 맞추기 위해 추가 */
+}
+
+* {
+  font-family: "Nanum Pen Script", cursive;
+  box-sizing: inherit;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* 높이를 조정할 수 있습니다 */
+  background-color: #f1f1f1; /* 배경색을 변경할 수 있습니다 */
+}
+
+p {
+  margin: 0;
+}
+
+.ad-banner1 {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ad-banner2 {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+/* 반응형 레이아웃 */
+@media (max-width: 1280px) {
+  .ad-banner1 {
+    width: 50%;
+  }
+  .ad-banner2 {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ad-banner1 {
+    width: 60%;
+  }
+  .ad-banner2 {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad-banner1 {
+    width: 80%;
+  }
+  .ad-banner2 {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .ad-banner1 {
+    width: 100%;
+  }
+  .ad-banner2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .ad-banner1 {
+    width: 100%;
+  }
+  .ad-banner2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .ad-banner1 {
+    width: 100%;
+  }
+  .ad-banner2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-banner1 {
+    width: 100%;
+  }
+  .ad-banner2 {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,12 +1,9 @@
 package com.example.simpleboard.reply.service;
 
-import com.example.simpleboard.crud.CRUDAbstractService;
-import com.example.simpleboard.post.db.PostEntity;
 import com.example.simpleboard.post.db.PostRepository;
 import com.example.simpleboard.reply.db.ReplyEntity;
 import com.example.simpleboard.reply.db.ReplyRepository;
 import com.example.simpleboard.reply.model.ReplyDto;
-import com.example.simpleboard.reply.model.ReplyRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,18 +12,19 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ReplyService extends CRUDAbstractService<ReplyDto, ReplyEntity> {
+public class ReplyService {
 
-/*    private final ReplyRepository replyRepository;
+    private final ReplyRepository replyRepository;
     private final PostRepository postRepository;
 
+
     public ReplyEntity create(
-            ReplyRequest replyRequest
+            ReplyDto replyRequest
     ){
         var optionalPostEntity = postRepository.findById(replyRequest.getPostId());
 
         if(optionalPostEntity.isEmpty()){
-            throw new RuntimeException("게시물이 존재 하지 않습니다 : " + replyRequest.getPostId());
+            throw new RuntimeException("게시물이 존재 하지 않습니다 : "+replyRequest.getPostId());
         }
 
         var entity = ReplyEntity.builder()
@@ -44,7 +42,6 @@ public class ReplyService extends CRUDAbstractService<ReplyDto, ReplyEntity> {
     }
 
     public List<ReplyEntity> findAllByPostId(Long postId){
-
         return replyRepository.findAllByPostIdAndStatusOrderByIdDesc(postId, "REGISTERED");
-    }*/
+    }
 }
